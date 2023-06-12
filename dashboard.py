@@ -52,10 +52,10 @@ with pricing_data:
 # Fundamental Data tab
 from alpha_vantage.fundamentaldata import FundamentalData
 with fundamental_data:
-    key = 'JN50EMSVSK3QFY5K'
-    url = 'https://www.alphavantage.co/query?function=BALANCE_SHEET&symbol=TSLA&apikey=JN50EMSVSK3QFY5K'
-    url = 'https://www.alphavantage.co/query?function=INCOME_STATEMENT&symbol=TSLA&apikey=JN50EMSVSK3QFY5K'
-    url = 'https://www.alphavantage.co/query?function=CASH_FLOW&symbol=TSLA&apikey=JN50EMSVSK3QFY5K'
+    key = ''
+    url = 'https://www.alphavantage.co/query?function=BALANCE_SHEET&symbol=TSLA&apikey=apikey'
+    url = 'https://www.alphavantage.co/query?function=INCOME_STATEMENT&symbol=TSLA&apikey=apikey'
+    url = 'https://www.alphavantage.co/query?function=CASH_FLOW&symbol=TSLA&apikey=apikey'
     r = requests.get(url)
     fd = FundamentalData(key, output_format = 'pandas')
     st.subheader('Balance Sheet')
